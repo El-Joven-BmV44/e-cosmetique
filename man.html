@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Inclure Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien index.css -->
+    <link rel="stylesheet" href="style_categ.css">
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2b71c3586d.js" crossorigin="anonymous"></script>
+    <title>Article Homme</title>
+</head>
+<body>
+    <!-- Entête du site -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <h1>E-cosmétique</h1>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a href="a-propos.html">À-propos</a></li>
+
+                    <!-- Dropdown Catalogue -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="catalogueDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catégories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
+                            <li><a class="dropdown-item" href="man.html">Homme</a></li>
+                            <li><a class="dropdown-item" href="women.html">Femme</a></li>
+                        </ul>
+                    </li>
+                    <!-- Icône panier -->
+                    <li class="cart">
+                        <a href="commande.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Panier
+                        <!-- <span id="cart-count">0</span> -->
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="phone ms-3">
+                    <a href="tel:+221770000000"><span class="fa-solid fa-phone"></span> +221 77 000 00 00</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+                                            <!-- ANNIMATION D'ACCUEIL -->
+    <div class="section-carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Annimation 1 -->
+                <div class="carousel-item active">
+                    <img src="img/f_m1.png" class="d-block w-100" alt="...">
+                </div>
+                <!-- Annimation 2 -->
+                <div class="carousel-item">
+                    <img src="img/f_m2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+                                                    <!-- SECTION PRODUITS -->
+    <section class="category-section">
+        <h2>Parfums</h2>
+        <div class="product-grid">
+
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="img/man/parfum1.jpg" alt="Parfum Oud">
+                <h3>Orchid oud Parfum Longue duree - 50ml</h3>
+                <p class="price">3 000 FCFA</p>
+                <button onclick="addToCart('Orchid oud Parfum Longue duree - 50ml', 3000)">Achetez</button>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="img/man/parfum2.webp" alt="HUGO BOSS">
+                <h3>HUGO BOSS – BOSS Bottled Eau de Toilette</h3>
+                <p class="price">5 000 FCFA</p>
+                <button onclick="addToCart('HUGO BOSS – BOSS Bottled Eau de Toilette', 5000)">Achetez</button>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="img/man/parfum3.jpg" alt="Cheetah Spray">
+                <h3>Cheetah Spray Anti-Dégâts pour Homme</h3>
+                <p class="price">2 500 FCFA</p>
+                <button onclick="addToCart('Cheetah Spray Anti-Dégâts pour Homme', 2500)">Achetez</button>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="img/man/parfum4.png" alt="Parfum Sauvage">
+                <h3>DIOR Sauvage – Eau de Parfum pour Homme</h3>
+                <p class="price">7 000 FCFA</p>
+                <button onclick="addToCart('DIOR Sauvage – Eau de Parfum pour Homme', 7000)">Achetez</button>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="product-card">
+                <img src="img/man/parfum5.webp" alt="HUGO BOSS">
+                <h3>HUGO BOSS - Parfum pour Homme</h3>
+                <p class="price">10 000 FCFA</p>
+                <button onclick="addToCart('HUGO BOSS - Parfum pour Homme', 10000)">Achetez</button>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="product-card">
+                <img src="img/man/parfum6.webp" alt="Le Sel d’Issey">
+                <h3>Le Sel d’Issey – Eau de Toilette pour Homme</h3>
+                <p class="price">5 000 FCFA </p>
+                <button onclick="addToCart('Le Sel d’Issey – Eau de Toilette pour Homme', 5000)">Achetez</button>
+            </div>
+            
+            <!-- Produit 7 -->
+            <div class="product-card">
+                <img src="img/man/parfum7.jpg" alt="Terre d’Hermès">
+                <h3>Terre d’Hermès Intense Parfum pour Homme</h3>
+                <p class="price">4 000 FCFA </p>
+                <button onclick="addToCart('Terre d’Hermès Intense Parfum pour Homme', 4000)">Achetez</button>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="product-card">
+                <img src="img/man/parfum8.jpg" alt="Dove Déodorant">
+                <h3>Dove Go Fresh Deodorant Spray</h3>
+                <p class="price">2 000 FCFA</p>
+                <button onclick="addToCart('Dove Go Fresh Deodorant Spray', 2000)">Achetez</button>
+            </div>
+            <!-- Produit 9 -->
+            <div class="product-card">
+                <img src="img/man/parfum9.jpg" alt="Hermès H24">
+                <h3>Hermès – H24 Eau de Parfum Homme</h3>
+                <p class="price">10 000 FCFA</p>
+                <button onclick="addToCart('Hermès – H24 Eau de Parfum Homme', 10000)">Achetez</button>
+            </div>
+
+            <!-- Produit 10 -->
+            <div class="product-card">
+                <img src="img/man/parfum10.jpg" alt="Oud Elite">
+                <h3>Oud Elite GOLD ORCHID Parfum - 100ml</h3>
+                <p class="price">3 000 FCFA</p>
+                <button onclick="addToCart('Oud Elite GOLD ORCHID Parfum - 100ml', 3000)">Achetez</button>
+            </div>
+
+        </div>
+    </section>
+
+                                    <!-- ------------------------- -->
+                                     <!-- 2 SECTION PRODUITS -->
+    <section class="category-section">
+        <h2>Corps et Bain</h2>
+        <div class="product-grid">
+
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="img/man/cb1.jpg" alt="Colgate Total">
+                <h3>Colgate Total Gel Dentifrice Protection Gencives Fresh Mint</h3>
+                <p class="price">3 000 FCFA</p>
+                <button onclick="addToCart('Colgate Total Gel Dentifrice Protection Gencives Fresh Mint', 3000)">Achetez</button>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="img/man/cb2.webp" alt="Huile de soin barbe">
+                <h3>FACEFACTS Huile de soin barbe Bert & Bert Barbers</h3>
+                <p class="price">3 500 FCFA </p>
+                <button onclick="addToCart('FACEFACTS Huile de soin barbe Bert & Bert Barbers', 3500)">Achetez</button>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="img/man/cb3.webp" alt="Tondeuse">
+                <h3>KING C GILLETTE Tondeuse à barbe 4 têtes sans fil</h3>
+                <p class="price">35 000 FCFA</p>
+                <button onclick="addToCart('KING C GILLETTE Tondeuse à barbe 4 têtes sans fil', 35000)">Achetez</button>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="img/man/cb4.jpg" alt="Pack Perfect Man">
+                <h3>Perfect Man Pack soins homme : Lait 400ml + Gel douche 400ml+ Eau de Cologne 400ml</h3>
+                <p class="price">5 500 FCFA</p>
+                <button onclick="addToCart('Perfect Man Pack soins homme : Lait 400ml + Gel douche 400ml+ Eau de Cologne 400ml', 5500)">Achetez</button>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="product-card">
+                <img src="img/man/cb5.jpg" alt="Pâte Dentifrice">
+                <h3>Pâte Dentifrice blanchissant - PROcomplete - 180GM</h3>
+                <p class="price">1 000 FCFA</p>
+                <button onclick="addToCart('Pâte Dentifrice blanchissant - PROcomplete - 180GM', 1000)">Achetez</button>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="product-card">
+                <img src="img/man/cb6.jpg" alt="Distributeur pate dentifrice">
+                <h3>Porte-Brosse à Dents Distributeur Automatique Dentifrice Désinfection - blanc</h3>
+                <p class="price">3 000 FCFA</p>
+                <button onclick="addToCart('Porte-Brosse à Dents Distributeur Automatique Dentifrice Désinfection - blanc', 3000)">Achetez</button>
+            </div>
+            
+            <!-- Produit 7 -->
+            <div class="product-card">
+                <img src="img/man/cb7.jpg" alt="Crème hydratante">
+                <h3>AmLactin Rapid Relief Crème hydratante Peau sèche</h3>
+                <p class="price">14 000 FCFA</p>
+                <button onclick="addToCart('AmLactin Rapid Relief Crème hydratante Peau sèche', 14000)">Achetez</button>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="product-card">
+                <img src="img/man/cb8.webp" alt="Gel de Douche">
+                <h3>TAHITI Gel de Douche Coco Waves Parfum Coco & Ananas</h3>
+                <p class="price">2 500 FCFA</p>
+                <button onclick="addToCart('TAHITI Gel de Douche Coco Waves Parfum Coco & Ananas', 2500)">Achetez</button>
+            </div>
+            <!-- Produit 9 -->
+            <div class="product-card">
+                <img src="img/man/cb9.jpg" alt="Lait de corps">
+                <h3>Clairmen - Lait de corps Eclaircissant Homme – Lightning programme</h3>
+                <p class="price">1 000 FCFA</p>
+                <button onclick="addToCart('Clairmen - Lait de corps Eclaircissant Homme – Lightning programme', 1000)">Achetez</button>
+            </div>
+
+            <!-- Produit 10 -->
+            <div class="product-card">
+                <img src="img/man/cb10.jpg" alt="Savon de visage">
+                <h3>Sivoderm Savon de visage Antibactérien - 80Gr</h3>
+                <p class="price">700 FCFA</p>
+                <button onclick="addToCart('Sivoderm Savon de visage Antibactérien - 80Gr', 700)">Achetez</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+                                                        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>E-cosmétique</h2>
+                    <div class="sec-adresse">
+                        <h3>Adresse</h3>
+                        <p><span class="fa-solid fa-location-dot"></span> Coeur de ville, Kaolack</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Contacts</h3>
+                    <p><span class="fa-solid fa-phone"></span> +221 77 000 00 00</p>
+                    <p><span class="fa-solid fa-envelope"></span> contact@e-cosmetique.com</p>
+                    <div class="sec-reaseau">
+                        <h3>Nous rejoindre</h3>
+                        <div class="icone">
+                            <p><a href="https://instagram.com"><span class="fab fa-instagram"></span></a></p>
+                            <p><a href="https://facebook.com"><span class="fab fa-facebook"></span></a></p>
+                            <p><a href="https://tiktok.com"><span class="fab fa-tiktok"></span></a></p>
+                            <p><a href="https://x.com"><span class="fab fa-x-twitter"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="footer-section">
+                        <h3>Nous contacter</h3>
+                        <form id="contactForm">
+                            <input type="text" id="nom" placeholder="Votre nom" required>
+                            <input type="email" id="contactEmail" placeholder="Votre email" required>
+                            <textarea id="messageContact" placeholder="Votre message" required></textarea>
+                            <button type="submit">Envoyer</button>
+                            <p id="confirmationContact"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="annee"></span> E-COSMETIQUE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script panier -->
+    <script>
+            function addToCart(name, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                let existing = cart.find(item => item.name === name);
+
+                if (existing) {
+                    existing.quantity += 1;
+                } else {
+                    cart.push({ name: name, price: price, quantity: 1 });
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Produit ajouté au panier !");
+            }
+    </script>
+</body>
+</html>
