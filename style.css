@@ -164,8 +164,19 @@ body{
 
 
 
+@media screen and (max-width: 992px) {
+    .container-fluid {
+        flex-wrap: wrap;
+    }
 
+    .navbar-nav {
+        gap: 15px;
+    }
 
+    .phone {
+        margin-left: 0;
+    }
+}
 @media screen and (max-width : 768px){
     #mobile_menu{
         display: block;
@@ -176,9 +187,45 @@ body{
     html{
         font-size: 95%;
     }
+    .container-fluid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .container-fluid h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 12px;
+    }
+
+    .phone {
+        text-align: center;
+    }
+    
 }
 @media screen and (max-width : 768px){
     html{
         font-size: 70%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container-fluid h1 {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .phone a {
+        font-size: 14px;
     }
 }
