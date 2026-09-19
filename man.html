@@ -22,37 +22,35 @@
 <body>
     <!-- Entête du site -->
     <div class="header">
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <h1>E-cosmétique</h1>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a href="a-propos.html">À-propos</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#">Accueil</a></li>
+                        <li class="nav-item"><a href="a-propos.html">À-propos</a></li>
 
-                    <!-- Dropdown Catalogue -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="catalogueDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Catégories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
-                            <li><a class="dropdown-item" href="man.html">Homme</a></li>
-                            <li><a class="dropdown-item" href="women.html">Femme</a></li>
-                        </ul>
-                    </li>
-                    <!-- Icône panier -->
-                    <li class="cart">
-                        <a href="commande.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Panier
-                        <!-- <span id="cart-count">0</span> -->
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="phone ms-3">
+                        <!-- Dropdown Catalogue -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catalogueDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catégories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="man.html">Homme</a></li>
+                                <li><a class="dropdown-item" href="women.html">Femme</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="phone ms-3">
                     <a href="tel:+221770000000"><span class="fa-solid fa-phone"></span> +221 77 000 00 00</a>
                 </div>
+                </div>
+
             </div>
         </nav>
     </div>
