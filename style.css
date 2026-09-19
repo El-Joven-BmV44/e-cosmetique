@@ -34,6 +34,15 @@ body{
     text-shadow: 2px 2px 2px #000;
     font-family: cursive;
 }
+.navbar-toggler {
+    display: none; /* Masquer le bouton de menu en mode ordi */
+    border: 1px solid #ffb6c1;
+}
+.navbar-toggler-icon {
+    filter: brightness(1) invert(1); /* Changer la couleur de l'icône du bouton de menu */
+}
+
+
 /* ---------------------------------------------------------------------------------------------------- */
 .navbar-nav {
     margin-right: 200px;
@@ -160,72 +169,162 @@ body{
 
 
 
-/* ---------------------------------------------------------------------------------------------------- */
+/* --------------------------------------Responsivité de la page -------------------------------------------------------------- */
 
-
-
-@media screen and (max-width: 992px) {
-    .container-fluid {
-        flex-wrap: wrap;
+@media screen and (max-width: 992px){
+    .navbar-toggler {
+        display: block; /* Afficher le bouton de menu en mode tablette/mobile */
     }
-
-    .navbar-nav {
-        gap: 15px;
+    .navbar{
+        padding:0 15px;
     }
-
-    .phone {
-        margin-left: 0;
+    .navbar .container-fluid{
+        flex-wrap:wrap;
+    }
+    .navbar h1{
+        margin-left:0;
+        font-size:1.5rem;
+    }
+    .navbar-nav{
+        margin-right:0;
+        align-items:center;
+    }
+    .navbar-nav li{
+        padding:3px 5px;
+    }
+    .navbar-collapse {
+        width: 100%;
+        padding: 15px;
+    }
+    .phone a{
+        margin-right:0;
+        font-size:.95rem;
+        padding:3px 8px;
+    }
+    .hero_content h1{
+        font-size:2.3rem;
+    }
+    .hero_content h2{
+        font-size:1.6rem;
+        margin-bottom:3rem;
+        padding:0 20px;
+    }
+    .hero_content a{
+        font-size:1.2rem;
+        padding:5px 16px;
     }
 }
-@media screen and (max-width : 768px){
-    #mobile_menu{
-        display: block;
-    }
-    #navbar ul{
-        display: none;
-    }
-    html{
-        font-size: 95%;
-    }
-    .container-fluid {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .container-fluid h1 {
-        font-size: 28px;
-        text-align: center;
-    }
 
-    .navbar-nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 0;
-        gap: 12px;
+@media screen and (max-width: 768px){
+    body{
+        overflow-x:hidden;
     }
-
-    .phone {
-        text-align: center;
+    .header{
+        height:auto;
+        line-height:normal;
+    }
+    .navbar{
+        min-height:65px;
+        padding:10px 15px;
+    }
+    .navbar .container-fluid{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    .navbar h1{
+        margin:0;
+        font-size:1.4rem;
+    }
+    .navbar-nav{
+        width:100%;
+        margin:0;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .navbar-nav li{
+        padding:3px 4px;
+        font-size:.9rem;
+    }
+    .nav-item a{
+        font-size:.9rem;
+        padding:3px 6px;
+    }
+    .dropdown-menu{
+        min-width: 80px;
+        min-height: 50px;
+        padding: 2px 0;
+        margin-left:0;
+        width:25px;
+        background: #fff !important;
+    }
+    .dropdown-menu li a{
+        margin-top: 0;
+    }
+    .dropdown-menu li a:hover{
+        color: #ffb6c1 !important;
+        font-size: medium !important;
+        font-weight: bold !important;
+        cursor: pointer !important;
     }
     
-}
-@media screen and (max-width : 768px){
-    html{
-        font-size: 70%;
+    .phone{
+        display:none;
+    }
+    .hero{
+        min-height:100vh;
+        height:100vh;
+        padding:0 15px;
+    }
+    .hero_content{
+        width:100%;
+        padding:0 15px;
+    }
+    .hero_content h1{
+        font-size:2rem;
+    }
+    .hero_content h2{
+        font-size:1.3rem;
+        margin-top:.8rem;
+        margin-bottom:2.5rem;
+    }
+    .hero_content a{
+        display:inline-block;
+        font-size:1rem;
+        padding:7px 15px;
     }
 }
-@media screen and (max-width: 480px) {
-    .container-fluid h1 {
-        font-size: 24px;
-    }
 
-    .navbar-nav {
-        flex-direction: column;
-        gap: 10px;
+@media screen and (max-width: 480px){
+    .navbar{
+        padding:8px 10px;
     }
-
-    .phone a {
-        font-size: 14px;
+    .navbar h1{
+        font-size:1.2rem;
+    }
+    .navbar-nav{
+        justify-content:center;
+    }
+    .navbar-nav li{
+        padding:2px;
+    }
+    .nav-item a{
+        font-size:.8rem;
+        padding:3px 4px;
+    }
+    .hero_content h1{
+        font-size:1.7rem;
+    }
+    .hero_content h2{
+        font-size:1.1rem;
+        line-height:1.5;
+        margin-bottom:2rem;
+    }
+    .hero_content a{
+        font-size:.9rem;
+        padding:7px 12px;
     }
 }
